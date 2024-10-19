@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from SUHANIMUSIC import YouTube, app
-from SUHANIMUSIC.core.call import PRO
+from SUHANIMUSIC.core.call import SUHANI
 from SUHANIMUSIC.misc import db
 from SUHANIMUSIC.utils import AdminRightsCheck, seconds_to_min
 from SUHANIMUSIC.utils.inline import close_markup
@@ -56,7 +56,7 @@ async def seek_comm(cli, message: Message, _, chat_id):
     if "index_" in file_path:
         file_path = playing[0]["vidid"]
     try:
-        await PRO.seek_stream(
+        await SUHANI.seek_stream(
             chat_id,
             file_path,
             seconds_to_min(to_seek),
