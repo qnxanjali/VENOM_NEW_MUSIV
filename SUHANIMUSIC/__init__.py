@@ -12,7 +12,7 @@ git()
 dbb()
 heroku()
 
-app = PRO()
+app = SUHANI()
 api = SafoneAPI()
 userbot = Userbot()
 
