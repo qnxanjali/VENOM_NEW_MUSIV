@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from SUHANIMUSIC import app
-from SUHANIMUSIC.core.call import PRO
+from SUHANIMUSIC.core.call import SUHANI
 from SUHANIMUSIC.utils.database import is_music_playing, music_off
 from SUHANIMUSIC.utils.decorators import AdminRightsCheck
 from SUHANIMUSIC.utils.inline import close_markup
