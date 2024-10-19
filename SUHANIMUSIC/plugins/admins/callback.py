@@ -4,7 +4,7 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from SUHANIMUSIC import YouTube, app
-from SUHANIMUSIC.core.call import PRO
+from SUHANIMUSIC.core.call import SUHANI
 from SUHANIMUSIC.misc import SUDOERS, db
 from SUHANIMUSIC.utils.database import (
     get_active_chats,
