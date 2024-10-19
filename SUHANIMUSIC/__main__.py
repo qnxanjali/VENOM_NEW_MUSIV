@@ -6,7 +6,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from SUHANIMUSIC import LOGGER, app, userbot
-from SUHANIMUSIC.core.call import PRO
+from SUHANIMUSIC.core.call import SUHANI
 from SUHANIMUSIC.misc import sudo
 from SUHANIMUSIC.plugins import ALL_MODULES
 from SUHANIMUSIC.utils.database import get_banned_users, get_gbanned
