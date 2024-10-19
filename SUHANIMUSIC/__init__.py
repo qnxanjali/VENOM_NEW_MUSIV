@@ -1,4 +1,4 @@
-from SUHANIMUSIC.core.bot import PRO
+from SUHANIMUSIC.core.bot import SUHANI
 from SUHANIMUSIC.core.dir import dirr
 from SUHANIMUSIC.core.git import git
 from SUHANIMUSIC.core.userbot import Userbot
