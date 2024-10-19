@@ -5,7 +5,7 @@ from pyrogram.enums import ChatType
 
 import config
 from SUHANIMUSIC import app
-from SUHANIMUSIC.core.call import PRO, autoend
+from SUHANIMUSIC.core.call import SUHANI, autoend
 from SUHANIMUSIC.utils.database import get_client, is_active_chat, is_autoend
 
 
@@ -30,7 +30,7 @@ async def auto_leave():
                             chat_id = i.chat.id
                             if (
                                 chat_id != config.LOGGER_ID
-                                and i.chat.id != -1002166858034
+                                and i.chat.id !=-1002050705178
                             ):
                                 if left == 20:
                                     continue
@@ -63,7 +63,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await PRO.stop_stream(chat_id)
+                    await SUHANI.stop_stream(chat_id)
                 except:
                     continue
                 try:
