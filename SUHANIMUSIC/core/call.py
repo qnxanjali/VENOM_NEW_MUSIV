@@ -176,10 +176,10 @@ class Call(PyTgCalls):
                         f"atempo={speed} "
                         f"{out}"
                     ),
-                    stdin=asyncio.subSUHANIcess.PIPE,
-                    stderr=asyncio.subSUHANIcess.PIPE,
+                    stdin=asyncio.subprocess.PIPE,
+                    stderr=asyncio.subprocess.PIPE,
                 )
-                await SUHANIc.communicate()
+                await proc.communicate()
             else:
                 pass
         else:
