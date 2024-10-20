@@ -26,7 +26,7 @@ BUTTON = InlineKeyboardMarkup(
     ]
 )
 
-CELEBRATION_VID_URL = "https://github.com/qnxanjali/SUHANIMUSIC/assets/155803358/dcbec346-bb98-4818-9a1c-683e9c3107b0"
+CELEBRATION_VID_URL = "https://envs.sh/pwb.mp4"
 
 BD_VID = "https://telegra.ph/file/943bb99829ec526c3f99a.mp4"
 
