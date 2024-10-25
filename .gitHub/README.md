@@ -14,7 +14,7 @@
 GO TO [RELOAD.PY](https://github.com/ProPrivate/PROMUSIC/blob/Master/PROMUSIC/plugins/tools/reload.py) THEN CHANGE MY ID NUMBER 
 
 <p align="center">
-  <img width="500" src="https://telegra.ph/file/93fe8699ccadb924effad.jpg">
+  <img width="500" src="https://envs.sh/pfv.jpg">
 </p>
 
 <p align="center">
