@@ -39,8 +39,8 @@ async def get_userinfo_img(
 
         circular_img = Image.new("RGBA", img.size, (0, 0, 0, 0))
         circular_img.paste(img, (0, 0), mask)
-        resized = circular_img.resize((286, 286))
-        bg.paste(resized, (297, 117), resized)
+        resized = circular_img.resize((400, 400))
+        bg.paste(resized, (440, 160), resized)
 
     img_draw = ImageDraw.Draw(bg)
 
@@ -51,7 +51,7 @@ async def get_userinfo_img(
 # --------------------------------------------------------------------------------- #
 
 bg_path = "SUHANIMUSIC/assets/userinfo.png"
-font_path = "SUHANIMUSIC/assets/hiroko.ttf"
+font_path = "SUHANIMUSIC/assets/font4.ttf"
 
 # --------------------------------------------------------------------------------- #
 
