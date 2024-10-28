@@ -23,6 +23,8 @@ GO TO [RELOAD.PY](https://github.com/qnxanjali/SUHANIMUSIC/blob/Master/SUHANIMUS
 
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
+<a href="https://dashboard.heroku.com/new?template=https://github.com/itzAsuraa/TanuMusic"><img src="https://img.shields.io/badge/Deploy%20On%20Heroku-008080?style=for-the-badge&logo=heroku" width="200""/></a>
+   
 </h3>
 
 <a href="https://dashboard.heroku.com/new?template=https://github.com/itzAsuraa/TanuMusic"><img src="https://img.shields.io/badge/Deploy%20On%20Heroku-008080?style=for-the-badge&logo=heroku" width="200""/></a>
