@@ -41,13 +41,9 @@ async def get_userinfo_img(
         circular_img.paste(img, (0, 0), mask)
         resized = circular_img.resize((286, 286))
         bg.paste(resized, (297, 117), resized)
-        
-    img_draw = ImageDraw.Draw(bg)
 
-    img_draw.text(
-        (529, 627),
-    )
-        
+
+    img_draw = ImageDraw.Draw(bg)
 
     path = f"./userinfo_img_{user_id}.png"
     bg.save(path)
@@ -56,7 +52,7 @@ async def get_userinfo_img(
 # --------------------------------------------------------------------------------- #
 
 bg_path = "SUHANIMUSIC/assets/userinfo.png"
-font_path = "SUHANIMUSIC/assets/font4.ttf"
+font_path = "SUHANIMUSIC/assets/hiroko.ttf"
 
 # --------------------------------------------------------------------------------- #
 
@@ -94,9 +90,8 @@ async def member_has_left(client: app, member: ChatMemberUpdated):
                 profile_path=photo,
             )
 
-            caption = f"ㅤㅤ  ㅤ**❅────✦ ᴜsᴇʀ ʟᴇғᴛ ✦────❅**\n{member.chat.title}\n\n▰▰▰▰▰▰▰▰▰▰▰▰▰\n\n❖ ᴀ ᴍᴇᴍʙᴇʀ ʟᴇғᴛ ғʀᴏᴍ ɢʀᴏᴜᴘ.\n●ᴜsᴇʀ ɴᴀᴍᴇ ➥ {user.mention}\n● sᴇᴇ ʏᴏᴜ sᴏᴏɴ ᴀɢᴀɪɴ, ʙᴀʙʏ.\n\n▰▰▰▰▰▰▰▰▰▰▰▰▰\n\n❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥  ˹ sᴜʜᴀɴɪ ꭙ ᴍᴜsɪᴄ™ ♡゙\n❅─────✧❅✦❅✧─────❅"
+            caption = f"**❅────✦ ᴜsᴇʀ ʟᴇғᴛ ✦────❅**\n\n{member.chat.title}\n\n▰▰▰▰▰▰▰▰▰▰▰▰▰\n➻ ᴀ ᴍᴇᴍʙᴇʀ ʟᴇғᴛ ғʀᴏᴍ ɢʀᴏᴜᴘ.\n➻ ᴜsᴇʀ ɴᴀᴍᴇ » {user.mention}\n» ɪ'ᴍ ʀᴇᴀʟʟʏ ᴍɪss ʏᴏᴜ ʙᴀʙᴜ.\n▰▰▰▰▰▰▰▰▰▰▰▰▰\n\n❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ »  ˹ sᴜʜᴀɴɪ ꭙ ᴍᴜsɪᴄ™ ♡゙\n\n❅─────✦❅✧❅✦─────❅"
 
-            
             # Send the message with the photo, caption, and button
             await client.send_photo(
                 chat_id=member.chat.id,
