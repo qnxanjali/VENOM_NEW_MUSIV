@@ -44,6 +44,11 @@ async def get_userinfo_img(
         
     img_draw = ImageDraw.Draw(bg)
 
+    img_draw.text(
+        (529, 627),
+    )
+        
+
     path = f"./userinfo_img_{user_id}.png"
     bg.save(path)
     return path
