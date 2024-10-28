@@ -25,9 +25,8 @@ GO TO [RELOAD.PY](https://github.com/qnxanjali/SUHANIMUSIC/blob/Master/SUHANIMUS
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
 </h3>
 
-<h4>Click the button below to deploy Tanu Music Bot on Heroku!</h4>    
-<h4>If You show any error like failed to app Creation Then fork and deploy </h4>
 <a href="https://dashboard.heroku.com/new?template=https://github.com/itzAsuraa/TanuMusic"><img src="https://img.shields.io/badge/Deploy%20On%20Heroku-008080?style=for-the-badge&logo=heroku" width="200""/></a>
+
 <p><img width="300" align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=qnxanjali&show_icons=true&locale=en&layout=compact" alt="qnxanjali" /></p>
 
 ### Contact :
