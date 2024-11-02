@@ -54,19 +54,19 @@ def stream_markup_timer(_, chat_id, played, dur):
         bar = "—————————◉"
     buttons = [
         [
-            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
-            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
-        ],
-        [
             InlineKeyboardButton(
                 text=f"{played} {bar} {dur}",
                 callback_data="GetTimer",
             )
         ],
-      [
+        [
+            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
+            #InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+        ],
+          [
             InlineKeyboardButton(
                 text="✰ 𝖡ᴧ፝֠֩ʙꭎ ✰", url="https://t.me/VENOM_PRATAP",
             ),
@@ -79,17 +79,16 @@ def stream_markup_timer(_, chat_id, played, dur):
 
     return buttons
 
-
-def stream_markup(_, videoid, chat_id):
+def stream_markup(_, chat_id):
     buttons = [
         [
             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
             InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
+            #InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
          ],
-        [
+         [
             InlineKeyboardButton(
                 text="✰ 𝖡ᴧ፝֠֩ʙꭎ ✰", url="https://t.me/VENOM_PRATAP",
             ),
@@ -97,8 +96,8 @@ def stream_markup(_, videoid, chat_id):
                 text="✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰", url="https://t.me/VENOM_SUHANI",
             )
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
-    ]
+         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        ]
 
     return buttons
 
