@@ -60,7 +60,8 @@ def stream_markup_timer(_, chat_id, played, dur):
         bar = "🅟︎🅡︎🅐︎🅣︎🅐︎🅟︎—❤️—🅢︎🅤︎🅗︎🅐︎🅝︎🅘︎"
     
     buttons = [
-        [
+    buttons = [
+         [
             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
             InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
             InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
@@ -73,9 +74,17 @@ def stream_markup_timer(_, chat_id, played, dur):
                 callback_data="GetTimer",
             )
         ],
-        
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
-    ]
+          [
+            InlineKeyboardButton(
+                text="✰ 𝖡ᴧ፝֠֩ʙꭎ ✰", url="https://t.me/VENOM_PRATAP",
+            ),
+            InlineKeyboardButton(
+                text="✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰", url="https://t.me/VENOM_SUHANI",
+            )
+        ],
+         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        ]
+
     return buttons
 
 def stream_markup(_, chat_id):
@@ -86,9 +95,18 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+         ],
+         [
+            InlineKeyboardButton(
+                text="✰ 𝖡ᴧ፝֠֩ʙꭎ ✰", url="https://t.me/VENOM_PRATAP",
+            ),
+            InlineKeyboardButton(
+                text="✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰", url="https://t.me/VENOM_SUHANI",
+            )
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
-    ]
+         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        ]
+
     return buttons
 
 def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
