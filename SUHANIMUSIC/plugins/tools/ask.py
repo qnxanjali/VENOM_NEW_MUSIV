@@ -8,7 +8,7 @@ from SUHANIMUSIC import app
 # Function to query the AI API
 def ask_query(query, model=None):
     default_model = 'gpt-4o'
-    system_prompt = """You are a helpful assistant. Your name is Tanu, and your owner's name is Captain, known as @itzAsuraa."""
+    system_prompt = """You are a helpful assistant. Your name is Suhani, and your owner's name is Captain, known as @VENOM_SUHANI."""
 
     model = model or default_model
 
